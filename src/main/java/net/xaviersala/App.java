@@ -37,7 +37,9 @@ public class App extends GraphicsProgram
     private void keyPressed(KeyEvent e){
     	
     	int KeyCode = e.get;
-		awiich(KeyCode )
+		switch (KeyCode ){
+		
+		}
     	
     }
 
