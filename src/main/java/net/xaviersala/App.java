@@ -1,5 +1,7 @@
 package net.xaviersala;
 
+
+import acm.graphics.GImage;
 import acm.graphics.GLabel;
 import acm.program.GraphicsProgram;
 
@@ -14,13 +16,10 @@ public class App extends GraphicsProgram
     *
     */
    private static final long serialVersionUID = 1299094805237490891L;
-   private static final int AMPLADAPANTALLA = 1024;
-   private static final int ALTURAPANTALLA = 768;
+   private static final int AMPLADAPANTALLA = 1920;
+   private static final int ALTURAPANTALLA = 1080;
 
-    // Private Constructor per evitar que el crein
-    private App() {
-
-    }
+   
 
     /**
      * Programa principal...
@@ -28,12 +27,19 @@ public class App extends GraphicsProgram
     @Override
     public final void run() {
        setSize(AMPLADAPANTALLA, ALTURAPANTALLA);
+       GImage imatge = new GImage("ep.png");
 
        clicaPerComencar();
+       add(imatge, 20,20);
     }
 
 
-
+    private void keyPressed(KeyEvent e){
+    	
+    	int KeyCode = e.get;
+		awiich(KeyCode )
+    	
+    }
 
 
 /**
